@@ -1,4 +1,4 @@
-let map=new google.maps.Map(document.getElementById('map'));
+let map;
 
 function initMap(lat = 29.55805, lng = 34.94821) {
   map = new google.maps.Map(document.getElementById('map'), {
