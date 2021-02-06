@@ -5,6 +5,12 @@ function initMap(lat = 29.55805, lng = 34.94821) {
     center: { lat, lng },
     zoom: 16,
   });
+  google.maps.event.addListener(map, 'click', function(event){
+      let latitude = event.latLng.lat();
+      let longitude = event.latLng.lng()
+      let placeName = prompt('place\'s name:')
+      console.log(placeName,latitude, longitude);
+    });
   console.log('Map is ready');
 }
 
@@ -21,14 +27,8 @@ function setCenter() {
     };
     initMap(pos.lat, pos.lng);
   });
-  
-  google.maps.event.addListener(map, 'click', function(event){
-      let latitude = event.latLng.lat();
-      let longitude = event.latLng.lng()
-      let placeName = prompt('place\'s name:')
-      console.log(placeName,latitude, longitude);
-    });
 }
+
 
 // google.maps.event.addListener(map, 'click', function (event) {
 //   alert(event.latLng.lat() + ', ' + event.latLng.lng());
