@@ -9,7 +9,7 @@ function initMap(lat= 29.55805, lng= 34.94821 ) {
 }
 
 function setCenter() {
-  navigator.geolocation.getCurrentPosition(() => {
+  navigator.geolocation.getCurrentPosition((position) => {
     const pos = {
       lat: position.coords.latitude,
       lng: position.coords.longitude,
