@@ -1,0 +1,15 @@
+
+body{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.link{
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+}

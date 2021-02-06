@@ -1,0 +1,4 @@
+Hi Noy Hason! 
+ We removed the git files from your directory,
+be aware of that and make sure to upload your files without them...
+GitBot :) 

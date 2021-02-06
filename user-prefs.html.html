@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+  <title></title>
+  <link rel="stylesheet" href="css/pref-css.css" />
+</head>
+
+<body>
+  <header>
+    <h1>set up your preferences</h1>
+  </header>
+
+  <form>
+    <div>
+      <label for="bgc">background color:</label>
+      <input type="color" id="bgc" name="background color"/>
+    </div>
+
+    <div>
+      <label for="txt-color">text color:</label>
+      <input type="color" id="txt-color" name="text-color"/>
+    </div>
+    <div>
+        <label for="age">Age:</label>
+        <input type="range" name="age" min="18" max="120" id="age" onchange="showAge(this.value);"/>
+    </div>
+
+    <div>
+      <label for="birth-date">Birth-Date:</label>
+      <input type="date" id="birth-date" />
+    </div>
+    <div>
+      <label for="birth-time">Birth-Date:</label>
+      <input type="time" id="birth-time" />
+    </div>
+    <div>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" required/>
+    </div>
+    <div>
+      <!-- <input type="submit" onsubmit="onSubmit()" value="submit"/> -->
+      <button onclick="onSubmit(event)"/>Submit</button>
+    </div>
+  </form>
+</body>
+
+
+<script src="lib/jquery.js"></script>
+<script src="js/storage-service.js"></script>
+<script src="js/pref-controller.js"></script>
+<script src="js/pref-service.js"></script>
+
+<script src="js/util-service.js"></script>
